@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zodiaco.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conten-p">
+        <form action="">
+        <h2>Datos personales</h2>
+        <div class="datos-p">
+            <div>
+                <label>Nombre:</label>
+                <br>
+                <input type="text" [(ngModel)]="nombre" name="nombre" id="nombre">
+                <br>
+                <label>Edad</label>
+                <br>
+                <input type="text" [(ngModel)]="edad" id="edad" name="edad">    
+            </div>
+            
+            <br>
+            <br/>
+            <div>
+                <h4>Fecha de nacimineto</h4>
+                <label>día  </label>
+                <input type="text">
+                <br>
+                <label>Mes  </label>
+                <input type="text">
+                <br>
+                <label>Año  </label>
+                <input [(ngModel)]="ano" name="ano" id="ano" type="text" >
+            </div>
+            <div>
+                <h4>Genero</h4>
+                <input type="radio" name="genero" value="Masculino">
+                <label>Masculino</label>
+                <input type="radio" name="genero" value="Femenido">
+                <label>Femenido</label>
+                <input type="radio" name="genero" value="No binario">
+                <label>No binario</label>
+                <input type="radio" name="genero" value="Fluido">
+                <label>Fluido</label>
+                <input type="radio" name="genero" value="Otro">
+                <label>Otro</label>
+            </div>
+            
+        </div>
+        </form>
+        <button (click)="signoZodiaco()">imprimir</button>
+        <div>
+            <p>{{presen}}</p>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Isometra&display=swap');
+
+.conten-p {
+    font-family: 'Isometra', serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FFBEFB;
+    color: #460048;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.datos-p > div {
+    background-color: #B1B2FF;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    border: 1px solid #8C56D4;
+    border-radius: 4px;
+    padding: 6px;
+    margin-top: 4px;
+}
+
+button {
+    background-color: #be45fb;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Isometra', serif;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #700a9c;
+}
