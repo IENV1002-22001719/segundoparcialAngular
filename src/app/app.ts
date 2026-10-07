@@ -16,15 +16,14 @@ export class App {
 
 import { Component, OnInit, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { initFlowbite } from 'flowbite';
-/* import { Zodiaco } from './Formularios/zodiaco/zodiaco'; */
+import { initFlowbite } from 'flowbite';/* 
+ import { Zodiaco } from './Formularios/zodiaco/zodiaco';
+import { Usuario } from './Formularios/usuario/usuario'; */ 
 import { Navbar } from './navbar/navbar';
-import { Usuario } from './Formularios/usuario/usuario';
-
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar /*, Zodiaco */, Usuario],
+  imports: [RouterOutlet, Navbar  /* Zodiaco , Usuario */],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
