@@ -13,10 +13,10 @@ export class ListaAlumnos implements OnInit{
 
   alumnos:IAlumno[]=[]
   nuevoAlumno:IAlumno = {
-    matricula:'',
-    nombre:'',
-    correo:'',
-    materia:''
+    matricula:'xx',
+    nombre:'xx',
+    correo:'xx',
+    materia:'xx'
   }
 
   ngOnInit(): void {
@@ -27,6 +27,13 @@ export class ListaAlumnos implements OnInit{
         correo: new FormControl(''),
         materia: new FormControl('')
     })
+  }
+
+  muestaAlumnos(): void{
+    this.nuevoAlumno.matricula = this.formulario.value.matricula
+    this.nuevoAlumno.nombre = this.formulario.value.nombre
+    this.nuevoAlumno.correo = this.formulario.value.correo
+    this.nuevoAlumno.materia = this.formulario.value.materia
   }
 
   cargarAlumno(): void {

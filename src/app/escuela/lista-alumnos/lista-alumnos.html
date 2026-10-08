@@ -20,9 +20,9 @@
  
       <input
         type="text"
-        id="Matricula"
-        name="Matricula"
-        formControlName="Matricula"
+        id="matricula"
+        name="matricula"
+        formControlName="matricula"
         required
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
                focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -41,9 +41,9 @@
  
       <input
         type="text"
-        id="Nombre"
-        name="Nombre"
-        formControlName="Nombre"
+        id="nombre"
+        name="nombre"
+        formControlName="nombre"
         required
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
                focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -62,9 +62,9 @@
  
       <input
         type="text"
-        id="Correo"
-        name="Correo"
-        formControlName="Correo"
+        id="correo"
+        name="correo"
+        formControlName="correo"
         required
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
                focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -83,9 +83,9 @@
  
       <input
         type="text"
-        id="Materia"
-        name="Materia"
-        formControlName="Materia"
+        id="materia"
+        name="materia"
+        formControlName="materia"
         required
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
                focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -110,5 +110,15 @@
       </div>
  
   </form>
+
+  <h1 class="text-3xl font-bold text-gray-900 mb-6">
+    Lista Alumnos
+  </h1>
+
+  <h2>Matricula: {{nuevoAlumno.matricula}}</h2>
+  <h2>Nombre: {{nuevoAlumno.nombre}}</h2>
+  <h2>Correo: {{nuevoAlumno.correo}}</h2>
+  <h2>Materia: {{nuevoAlumno.materia}}</h2>
+  
  
 </div>
